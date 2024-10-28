@@ -188,7 +188,7 @@
                 $timestamp = date("Y-m-d H:i:s");
                 $recaptchaResponse = $_POST['g-recaptcha-response'];
 
-                $secretKey = '6LfZz24qAAAAALyDpQ1iIsAeLnMjdor063jTzhn3'; 
+                $secretKey = 'xx'; 
                 $verifyResponse = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$recaptchaResponse");
                 $responseData = json_decode($verifyResponse);
 
@@ -224,7 +224,7 @@
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
 
-                <div class="g-recaptcha" data-sitekey="6LfZz24qAAAAAEVuQzQ646icEFnvBjef7_hgq-q_"></div> 
+                <div class="g-recaptcha" data-sitekey="xx"></div> 
 
                 <input type="submit" value="Send Message">
             </form>
